@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navigation */
+nav {
+    background: #000;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left ul, .nav-right ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.nav-icon {
+    padding-right: 1em;
+}
+
+/* Buttons */
+.btn{
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+}
+.btn-black {
+    background: #000;
+    color: #fff;
+}
+.btn-grey {
+    background: #eee;
+}
+.nav-btn {
+    padding: 1em 1em;
+    border-radius: 30px;
+    background: #fff;
+    margin: .5em;
+}
+
+/* Main Section */
+.uber-services {
+    background: url(../images/drive.jpeg) no-repeat center center/cover;
+    height: 70vh;
+    padding: 5% 0 0 10%; 
+
+}
+
+.services-container {
+    background: #fff;
+    width: 40%;
+}
+
+.services-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* padding: 1em; */
+text-align: center;
+border-bottom: 1px solid lightgray;
+}
+.drive-header,
+.eat-header,
+.ride-header{
+width: 20%;
+font-size: .7rem;
+cursor: pointer;
+padding: 1em;
+}
+
+.drive-header{
+    border-bottom: 3px solid #000;
+}
+.services-icon {
+    padding-bottom: 1em;
+}
+
+/* Services body */
+.services-body {
+    padding: 1em;
+}
+.services-body h2{
+    font-size: 2rem;
+    
+}
+
+.services-body p {
+    margin: 1em 0;
+}
+
+.ride-body h2{
+    margin-bottom: 1em;
+}
+
+.eat-body,
+.ride-body {
+display: none;
+}
+
+/* Inputs */
+input[type="text"]{
+    padding: 1em 2em;
+    display: inline-block;
+    margin: 0.15em 0;
+    border: none;
+    background-color: #eee;
+    width: 100%;
+}
+
+.pickup {
+    position: relative;
+}
+
+.plane {
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.request {
+    margin-top: 1.5em;
+    display: flex;
+    gap: 1.5em;
+}
